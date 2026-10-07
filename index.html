@@ -593,94 +593,6 @@
             }
         }
 
-        /* ===================== PROCESS ===================== */
-        #process {
-            background: var(--navy-deep);
-            color: var(--cream);
-            padding: 80px 0;
-        }
-
-        @media (min-width: 768px) {
-            #process {
-                padding: 144px 0;
-            }
-        }
-
-        .process-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 40px;
-        }
-
-        @media (min-width: 768px) {
-            .process-grid {
-                grid-template-columns: 5fr 7fr;
-                gap: 40px;
-            }
-        }
-
-        .process-sticky {
-            position: static;
-        }
-
-        @media (min-width: 768px) {
-            .process-sticky {
-                position: sticky;
-                top: 112px;
-                align-self: start;
-            }
-        }
-
-        .process-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            padding: 8px 16px;
-            margin-top: 32px;
-        }
-
-        .process-badge-dot {
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            background: var(--gold);
-        }
-
-        .step-list {
-            list-style: none;
-        }
-
-        .step-item {
-            display: grid;
-            grid-template-columns: 2fr 10fr;
-            gap: 16px;
-            padding: 32px 0;
-        }
-
-        /* 🟢 NEW: Force the paragraph to span the full width on mobile */
-        .step-item p {
-            grid-column: 1 / -1;
-            margin-top: 4px;
-        }
-
-        @media (min-width: 768px) {
-            .step-item {
-                grid-template-columns: 1fr 5fr 6fr;
-                gap: 24px;
-            }
-
-            /* 🟢 NEW: Reset the paragraph to sit in the 3rd column on desktop */
-            .step-item p {
-                grid-column: auto;
-                margin-top: 0;
-            }
-        }
-
-        .step-item+.step-item {
-            border-top: 1px solid rgba(255, 255, 255, 0.10);
-        }
-
         /* ===================== WORK ===================== */
         #work {
             background: var(--cream);
@@ -1436,10 +1348,8 @@
                 <a href="#top" class="nav-logo">Abhijith<span></span></a>
                 <ul class="nav-links">
                     <li><a href="#about"><span class="eyebrow num">01</span><span class="eyebrow">About</span></a></li>
-                    <li><a href="#process"><span class="eyebrow num">02</span><span class="eyebrow">Process</span></a>
-                    </li>
-                    <li><a href="#work"><span class="eyebrow num">03</span><span class="eyebrow">Work</span></a></li>
-                    <li><a href="#contact"><span class="eyebrow num">04</span><span class="eyebrow">Contact</span></a>
+                    <li><a href="#work"><span class="eyebrow num">02</span><span class="eyebrow">Work</span></a></li>
+                    <li><a href="#contact"><span class="eyebrow num">03</span><span class="eyebrow">Contact</span></a>
                     </li>
                 </ul>
                 <button class="hamburger" id="hamburger-btn" aria-label="Open menu">
@@ -1467,11 +1377,9 @@
         <ul class="mobile-nav">
             <li><a href="#about" class="mobile-link"><span class="num eyebrow">01</span><span
                         class="lbl">about</span></a></li>
-            <li><a href="#process" class="mobile-link"><span class="num eyebrow">02</span><span
-                        class="lbl">process</span></a></li>
-            <li><a href="#work" class="mobile-link"><span class="num eyebrow">03</span><span class="lbl">work</span></a>
+            <li><a href="#work" class="mobile-link"><span class="num eyebrow">02</span><span class="lbl">work</span></a>
             </li>
-            <li><a href="#contact" class="mobile-link"><span class="num eyebrow">04</span><span
+            <li><a href="#contact" class="mobile-link"><span class="num eyebrow">03</span><span
                         class="lbl">contact</span></a></li>
         </ul>
     </div>
@@ -1483,7 +1391,6 @@
         <div class="container">
             <div class="hero-meta reveal-el">
                 <span class="eyebrow text-cream-muted">Portfolio — Vol. I</span>
-                <span class="eyebrow text-cream-muted" style="display:none" id="hero-year">MMXXV</span>
                 <span class="eyebrow text-cream-muted">Kollam — Kerala</span>
             </div>
         </div>
@@ -1530,7 +1437,7 @@
                     </a>
                 </div>
                 <div class="page-dots reveal-el eyebrow text-cream-muted" style="transition-delay:780ms">
-                    <span>01</span><span>·</span><span>02</span><span>·</span><span>03</span><span>·</span><span>04</span><span>·</span><span>05</span>
+                    <span>01</span><span>·</span><span>02</span><span>·</span><span>03</span><span>·</span><span>04</span>
                 </div>
             </div>
         </div>
@@ -1593,10 +1500,6 @@
                             <div class="font-serif text-navy" style="font-size:clamp(20px,2vw,26px)">Kollam, IN</div>
                         </div>
                         <div>
-                            <div class="eyebrow text-navy-muted" style="margin-bottom:8px">Studio</div>
-                            <div class="font-serif text-navy" style="font-size:clamp(20px,2vw,26px)">MOVION</div>
-                        </div>
-                        <div>
                             <div class="eyebrow text-navy-muted" style="margin-bottom:8px">Focus</div>
                             <div class="font-serif text-navy" style="font-size:clamp(20px,2vw,26px)">Motion + Story
                             </div>
@@ -1613,81 +1516,6 @@
         </div>
     </section>
 
-    <!-- ======================== PROCESS ======================== -->
-    <section id="process" class="bg-navy-deep grain">
-        <div class="container" style="padding-top:80px; padding-bottom:80px;">
-            <div class="process-grid">
-                <!-- Sticky left -->
-                <div class="process-sticky">
-                    <div class="section-label reveal-el">
-                        <span class="section-line gold"></span>
-                        <span class="eyebrow text-gold">How I think — 02</span>
-                    </div>
-                    <h2 class="display-xl text-cream" style="font-size:clamp(44px,7vw,84px);">
-                        <span class="block reveal-el" style="transition-delay:100ms">Logic beneath</span>
-                        <span class="block display-italic reveal-el" style="transition-delay:220ms">feeling.</span>
-                    </h2>
-                    <p class="reveal-el text-cream-muted"
-                        style="transition-delay:340ms; margin-top:32px; font-size:clamp(14px,1.1vw,15px); line-height:1.7; max-width:400px;">
-                        My work isn't decoration. It's a thought process made visible. Every frame answers a question I
-                        asked before the animation started.
-                    </p>
-                    <div class="process-badge reveal-el" style="transition-delay:440ms">
-                        <span class="process-badge-dot"></span>
-                        <span class="eyebrow text-cream">Original thought, not templates</span>
-                    </div>
-                </div>
-
-                <!-- Steps -->
-                <div>
-                    <ol class="step-list">
-                        <li class="step-item reveal-el" style="transition-delay:0ms">
-                            <span class="eyebrow text-gold">01</span>
-                            <div>
-                                <h3 class="font-serif text-cream"
-                                    style="font-size:clamp(24px,2.5vw,34px); line-height:1.2;">Feel first</h3>
-                            </div>
-                            <p class="text-cream-muted" style="font-size:clamp(14px,1.1vw,15px); line-height:1.7;">
-                                Before a single keyframe, I sit with the message. What should the viewer carry away? The
-                                feeling is the brief.</p>
-                        </li>
-                        <li class="step-item reveal-el" style="transition-delay:120ms">
-                            <span class="eyebrow text-gold">02</span>
-                            <div>
-                                <h3 class="font-serif text-cream"
-                                    style="font-size:clamp(24px,2.5vw,34px); line-height:1.2;">Write the philosophy</h3>
-                            </div>
-                            <p class="text-cream-muted" style="font-size:clamp(14px,1.1vw,15px); line-height:1.7;">I
-                                script in language, not storyboards. Scripts carry rhythm, silence and intent — the
-                                visuals inherit that weight.</p>
-                        </li>
-                        <li class="step-item reveal-el" style="transition-delay:240ms">
-                            <span class="eyebrow text-gold">03</span>
-                            <div>
-                                <h3 class="font-serif text-cream"
-                                    style="font-size:clamp(24px,2.5vw,34px); line-height:1.2;">Design the atmosphere
-                                </h3>
-                            </div>
-                            <p class="text-cream-muted" style="font-size:clamp(14px,1.1vw,15px); line-height:1.7;">
-                                Palette, texture, type and sound are chosen to serve the emotion. Every frame is a small
-                                room the viewer steps inside.</p>
-                        </li>
-                        <li class="step-item reveal-el" style="transition-delay:360ms">
-                            <span class="eyebrow text-gold">04</span>
-                            <div>
-                                <h3 class="font-serif text-cream"
-                                    style="font-size:clamp(24px,2.5vw,34px); line-height:1.2;">Animate the meaning</h3>
-                            </div>
-                            <p class="text-cream-muted" style="font-size:clamp(14px,1.1vw,15px); line-height:1.7;">
-                                Timing is the language of motion. I animate so the idea lands on a breath — not on a
-                                beat.</p>
-                        </li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- ======================== WORK ======================== -->
     <section id="work" class="bg-cream grain">
         <div class="container" style="padding-top:80px; padding-bottom:80px;">
@@ -1695,7 +1523,7 @@
                 <div>
                     <div class="section-label reveal-el">
                         <span class="section-line navy"></span>
-                        <span class="eyebrow text-navy-muted">Selected Work — 03</span>
+                        <span class="eyebrow text-navy-muted">Selected Work — 02</span>
                     </div>
                     <h2 class="display-xl text-navy" style="font-size:clamp(44px,7vw,84px);">
                         <span class="block reveal-el" style="transition-delay:120ms">A selected</span>
@@ -1725,7 +1553,7 @@
                 <div>
                     <div class="section-label reveal-el">
                         <span class="section-line gold"></span>
-                        <span class="eyebrow text-gold">Toolkit — 04</span>
+                        <span class="eyebrow text-gold">Toolkit — 03</span>
                     </div>
                     <h2 class="display-xl text-cream" style="font-size:clamp(44px,7vw,84px);">
                         <span class="block reveal-el" style="transition-delay:120ms">A quiet</span>
@@ -1782,7 +1610,7 @@
                 <div>
                     <div class="section-label reveal-el">
                         <span class="section-line navy"></span>
-                        <span class="eyebrow text-navy-muted">Contact — 05</span>
+                        <span class="eyebrow text-navy-muted">Contact — 04</span>
                     </div>
                     <h2 class="display-xl text-navy" style="font-size:clamp(44px,7vw,84px);">
                         <span class="block reveal-el" style="transition-delay:120ms">Let's build</span>
@@ -1915,7 +1743,7 @@
             </svg>
         </button>
         <div id="video-frame-wrap" class="aspect-video">
-            <iframe id="video-iframe" title="Video"
+            <iframe id="video-iframe" title="Video" referrerpolicy="strict-origin-when-cross-origin"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen frameborder="0"></iframe>
             <div class="modal-meta eyebrow text-cream" style="opacity:0.7">
@@ -1928,15 +1756,16 @@
     <!-- ======================== JAVASCRIPT ======================== -->
     <script>
         /* ---- DATA ---- */
-        const workItems = [
-            { id: "love", num: "01", year: "2026", tag: "Cinematic Motion Graphics", title: "Love is a Chemical Reaction", description: "A cinematic piece reframing love as a biological reaction — atmospheric scene design, symbolic metaphors, kinetic typography and sound design.", tools: ["After Effects", "Illustrator", "Photoshop"], youtubeId: "b82Q8wQjJhM", isShort: false, quote: null },
-            { id: "personality", num: "02", year: "2026", tag: "Short Form Reel", title: "Know Your Personality Type", description: "Self-initiated short form piece on personality awareness — atmospheric visuals with typographic storytelling, designed for social.", tools: ["After Effects", "Illustrator"], youtubeId: "gFYdAid7ih4", isShort: false, quote: null },
-            { id: "artist", num: "03", year: "2026", tag: "Visual Parable", title: "The Artist", description: "A parable inspired by Rick Rubin's The Creative Act — a man builds something beautiful on a mountain knowing no one will ever see it.", tools: ["After Effects"], youtubeId: "DZY3tTByaiI", isShort: false, quote: "Art is made for the artist, not the viewer." },
-            { id: "selling-skills", num: "04", year: "2025", tag: "Animated Short", title: "Making Money by Selling Skills", description: "A visual breakdown of how creators turn niche expertise into income streams — clean typographic motion with grounded storytelling.", tools: ["After Effects", "Illustrator"], youtubeId: "0vHyPaJNjQM", isShort: false, quote: null },
-            { id: "skill-economy", num: "05", year: "2025", tag: "Animated Explainer", title: "The Skill Economy", description: "An explainer on monetizing skills, featuring a visualization of a mentor's ₹50 lakh earning journey. Course final project.", tools: ["After Effects", "Illustrator"], youtubeId: "x66pwMFRKxg", isShort: false, quote: null },
-            { id: "ambient-3d", num: "06", year: "2025", tag: "3D / Blender", title: "Ambient — 3D Environment", description: "A dark atmospheric Japanese scene. A glowing light globe hovers in a moody environment — a study in lighting and spatial storytelling.", tools: ["Blender"], youtubeId: "LPBCFJLoNlY", isShort: false, quote: null },
+        const workItems = [ 
+            { id: "new-06", num: "01", year: "2026", tag: "Motion Graphics", title: "YouTube video intro animation", description: "A motion design intro built for a YouTube channel. Typography, rhythm and transitions work together to set the tone in the first few seconds, so the identity registers before the content begins.", tools: ["After Effects"], youtubeId: "XHnOvAQQaVs", isShort: false, quote: null },
+            { id: "new-07", num: "02", year: "2026", tag: "Motion Graphics", title: "Bird flying animation", description: "A bird flying animation where the focus is motion alone. The work is in the weight of each wingbeat, the easing and the flow of the flight path, so the movement feels alive.", tools: ["After Effects"], youtubeId: "9P4YM21RiBw", isShort: false, quote: null },
+            { id: "new-08", num: "03", year: "2026", tag: "Motion Graphics", title: "Ball optical illusion animation", description: "An optical illusion piece that blends AI-generated imagery with motion design. The visuals were created with ChatGPT image generation, then animated in After Effects to bend perception and hold the viewer between what they see and what they know.", tools: ["After Effects", "ChatGPT image generation"], youtubeId: "zRpOLXqOAm0", isShort: false, quote: null },
+            { id: "love", num: "04", year: "2026", tag: "Cinematic Motion Graphics", title: "Love is a Chemical Reaction", description: "A cinematic piece reframing love as a biological reaction — atmospheric scene design, symbolic metaphors, kinetic typography and sound design.", tools: ["After Effects", "Illustrator", "Photoshop"], youtubeId: "b82Q8wQjJhM", isShort: false, quote: null },
+            { id: "personality", num: "05", year: "2026", tag: "Short Form Reel", title: "Know Your Personality Type", description: "Self-initiated short form piece on personality awareness — atmospheric visuals with typographic storytelling, designed for social.", tools: ["After Effects", "Illustrator"], youtubeId: "gFYdAid7ih4", isShort: false, quote: null },
+            { id: "artist", num: "06", year: "2026", tag: "Visual Parable", title: "The Artist", description: "A parable inspired by Rick Rubin's The Creative Act — a man builds something beautiful on a mountain knowing no one will ever see it.", tools: ["After Effects"], youtubeId: "DZY3tTByaiI", isShort: false, quote: "Art is made for the artist, not the viewer." },
             { id: "distraction", num: "07", year: "2025", tag: "Short Form Reel", title: "Focus — Distraction Reel", description: "A short reel on reducing distractions — minimal, sharp, made to stop a scroll and start a thought.", tools: ["After Effects"], youtubeId: "AJRmXV1ascw", isShort: true, quote: null },
             { id: "chatgpt-saas", num: "08", year: "2026", tag: "Product Narrative", title: "ChatGPT as a SaaS", description: "A crisp animated narrative on how ChatGPT reshaped the SaaS landscape — product thinking told through motion.", tools: ["After Effects", "Illustrator"], youtubeId: "kAs2rQU9ZtI", isShort: false, quote: null },
+           
         ];
 
         const disciplines = [
@@ -2058,7 +1887,7 @@
         const modalYear = document.getElementById('modal-year-label');
 
         function openVideo(youtubeId, title, year, num, isShort) {
-            iframe.src = `https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0`;
+            iframe.src = `https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0&playsinline=1`;
             frameWrap.className = isShort === 'true' || isShort === true ? 'aspect-short' : 'aspect-video';
             modalTitle.textContent = `${num} — ${title}`;
             modalYear.textContent = year;
